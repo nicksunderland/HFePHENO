@@ -14,4 +14,4 @@ phenotyping data for heart failure.
 
 ## Documentation & Examples
 
-Can be found at:
+Can be found at: <https://nicksunderland.github.io/HFePHENO/>
