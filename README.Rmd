@@ -1,0 +1,35 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# HF.EHR.Pheno
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of HF.EHR.Pheno is to collate Electronic Health Records (EHR) phenotyping data for heart
+failure.
+
+## Installation
+
+You can install the development version of HF.EHR.Pheno like so:
+
+```{r install}
+remotes::install_github("nicksunderland/..... TBC")
+```
+
+## Documentation & Examples
+
+Can be found at: 
+

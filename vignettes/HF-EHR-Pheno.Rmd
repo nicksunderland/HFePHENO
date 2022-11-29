@@ -1,0 +1,19 @@
+---
+title: "HF-EHR-Pheno"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{HF-EHR-Pheno}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(HF.EHR.Pheno)
+```
