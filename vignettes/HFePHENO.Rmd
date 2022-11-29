@@ -75,7 +75,14 @@ codes <- codes |>
                                                                  "ICD9 codes"))) |>
   dplyr::arrange(coding_system) |>
   dplyr::distinct(code, .keep_all=TRUE)
-  
-# View the study details
+```
+## SNOMED codes
+```{r snomed_hf_codes}
+#SNOMED codes to copy & paste
+dput(codes$code[codes$coding_system=="SNOMED  CT codes"])
+```
+## All Heart Failure codes
+```{r codes}
+# View the codes and details
 kableExtra::kable(codes)
 ```
