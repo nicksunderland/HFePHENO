@@ -13,17 +13,18 @@ knitr::opts_chunk$set(
 )
 ```
 
-# HF.EHR.Pheno
+# HFePHENO
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/HFePHENO)](https://CRAN.R-project.org/package=HFePHENO)
 <!-- badges: end -->
 
-The goal of HF.EHR.Pheno is to collate Electronic Health Records (EHR) phenotyping data for heart
+The goal of HFePHENO is to collate Electronic Health Records (EHR) phenotyping data for heart
 failure.
 
 ## Installation
 
-You can install the development version of HF.EHR.Pheno like so:
+You can install the development version of HFePHENO like so:
 
 ```{r install}
 remotes::install_github("nicksunderland/..... TBC")
