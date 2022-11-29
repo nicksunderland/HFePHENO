@@ -245,9 +245,31 @@ Disease or Syndrome
 <span>                                                                 <span class="st">"ICD10 codes"</span>,    </span>
 <span>                                                                 <span class="st">"ICD9 codes"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">coding_system</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">code</span>, .keep_all<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span>  </span>
-<span><span class="co"># View the study details</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="va">code</span>, .keep_all<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="snomed-codes">SNOMED codes<a class="anchor" aria-label="anchor" href="#snomed-codes"></a>
+</h2>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">#SNOMED codes to copy &amp; paste</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/dput.html" class="external-link">dput</a></span><span class="op">(</span><span class="va">codes</span><span class="op">$</span><span class="va">code</span><span class="op">[</span><span class="va">codes</span><span class="op">$</span><span class="va">coding_system</span><span class="op">==</span><span class="st">"SNOMED  CT codes"</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="co">#&gt; c("10633002", "418304008", "42343007", "426263006", "48447003", </span></span>
+<span><span class="co">#&gt; "10335000", "128404006", "134401001", "134440006", "194767001", </span></span>
+<span><span class="co">#&gt; "194779001", "194781004", "195111005", "195112003", "195114002", </span></span>
+<span><span class="co">#&gt; "206586007", "233924009", "275514001", "314206003", "367363000", </span></span>
+<span><span class="co">#&gt; "407596008", "420300004", "420913000", "421704003", "422293003", </span></span>
+<span><span class="co">#&gt; "426611007", "430396006", "43736008", "446221000", "56675007", </span></span>
+<span><span class="co">#&gt; "698592004", "703272007", "717491000000102", "71892000", "760361000000100", </span></span>
+<span><span class="co">#&gt; "79955004", "83105008", "84114007", "85232009", "87837008", "88805009", </span></span>
+<span><span class="co">#&gt; "92506005", "1110931000000103", "711461000000104", "716621000000101", </span></span>
+<span><span class="co">#&gt; "716971000000109", "717191000000108", "717501000000108", "717531000000102"</span></span>
+<span><span class="co">#&gt; )</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="all-heart-failure-codes">All Heart Failure codes<a class="anchor" aria-label="anchor" href="#all-heart-failure-codes"></a>
+</h2>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># View the codes and details</span></span>
 <span><span class="fu">kableExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="va">codes</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <thead><tr>
