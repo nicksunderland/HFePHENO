@@ -49,7 +49,7 @@ ids_version = data.frame("id"     = c("PH25", "PH531", "PH182", "PH1028", "PH968
 details <- purrr::map2_df(.x = ids_version$id, 
                           .y = ids_version$version, 
                           .f = ~get_phenotype_detail_by_version(.x, .y, api_client=client)) |>
-  select(phenotype_id, phenotype_name, type)
+  dplyr::select(phenotype_id, phenotype_name, type)
 
 # View the study details
 kableExtra::kable(details)
@@ -67,14 +67,14 @@ codes <- purrr::map_df(.x = ids_version$id,
 
 # Make coding system a factor and arrange so that SNOMED codes first
 codes <- codes |> 
-  mutate(coding_system = factor(coding_system, levels = c("SNOMED  CT codes",
-                                                          "Read codes v2",
-                                                          "OXMIS codes",
-                                                          "Med codes",
-                                                          "ICD10 codes",    
-                                                          "ICD9 codes"))) |>
-  arrange(coding_system) |>
-  distinct(code, .keep_all=TRUE)
+  dplyr::mutate(coding_system = factor(coding_system, levels = c("SNOMED  CT codes",
+                                                                 "Read codes v2",
+                                                                 "OXMIS codes",
+                                                                 "Med codes",
+                                                                 "ICD10 codes",    
+                                                                 "ICD9 codes"))) |>
+  dplyr::arrange(coding_system) |>
+  dplyr::distinct(code, .keep_all=TRUE)
   
 # View the study details
 kableExtra::kable(codes)
