@@ -22,14 +22,6 @@ knitr::opts_chunk$set(
 The goal of HFePHENO is to collate Electronic Health Records (EHR) phenotyping data for heart
 failure.
 
-## Installation
-
-You can install the development version of HFePHENO like so:
-
-```{r install}
-remotes::install_github("nicksunderland/..... TBC")
-```
-
 ## Documentation & Examples
 
 Can be found at: 
